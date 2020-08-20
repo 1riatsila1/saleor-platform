@@ -13,7 +13,7 @@ All Saleor services started from a single repository
 1. Clone the repository:
 
 ```
-$ git clone https://github.com/mirumee/saleor-platform.git --recursive --jobs 3
+$ git clone https://github.com/1riatsila1/saleor-platform.git --recursive --jobs 3
 ```
 
 2. We are using shared folders to enable live code reloading. Without this, Docker Compose will not start:
@@ -70,7 +70,7 @@ You can find the latest version of Saleor, storefront and dashboard in their ind
 
 ## How to solve issues with lack of available space or build errors after update
 
-Most of the time both issues can be solved by cleaning up space taken by old containers. After that, we build again whole platform. 
+Most of the time both issues can be solved by cleaning up space taken by old containers. After that, we build again whole platform.
 
 
 1. Make sure docker stack is not running
@@ -85,7 +85,7 @@ $ docker-compose stop
 docker-compose rm
 ```
 
-3. Build fresh containers 
+3. Build fresh containers
 ```
 docker-compose build
 ```
@@ -100,10 +100,10 @@ If you are getting issues with lack of available space, consider prunning your d
   - all stopped containers
   - all networks not used by at least one container
   - all dangling images
-  - all dangling build cache 
-  
+  - all dangling build cache
+
   More info: https://docs.docker.com/engine/reference/commandline/system_prune/
-  
+
 <details><summary>I've been warned</summary>
 <p>
 
@@ -124,7 +124,7 @@ $ docker system prune
 - Saleor Storefront - http://localhost:3000
 - Saleor Dashboard - http://localhost:9000
 - Jaeger UI (APM) - http://localhost:16686
-- Mailhog (Test email interface) - http://localhost:8025 
+- Mailhog (Test email interface) - http://localhost:8025
 
 
 If you have any questions or feedback, do not hesitate to contact us via Spectrum or Gitter:
